@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="35sp"
+        android:text="串口："
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tv"
+        android:textSize="35sp"
+        android:text="/dev/ttyS0"
+        />
+
+    <Button
+        android:id="@+id/btn_ttymxc4_onff"
+        android:layout_width="250sp"
+        android:layout_height="80sp"
+        android:layout_marginLeft="50dp"
+        android:onClick="onClick_ttymxc4"
+        android:text="开"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:text="发送的字节数(byte)"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/tv_ttymxc4_send"
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:hint="0"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:text="接收的字节数(byte)"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/tv_ttymxc4_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:hint="0"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
